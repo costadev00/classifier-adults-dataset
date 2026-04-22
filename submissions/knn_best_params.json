@@ -1,0 +1,15 @@
+{
+  "grid_search_best_params": {
+    "model__n_neighbors": 61,
+    "model__p": 1,
+    "model__weights": "uniform"
+  },
+  "tie_break_selected_params": {
+    "model__n_neighbors": 61,
+    "model__weights": "uniform",
+    "model__p": 1
+  },
+  "tie_break_changed_selection": false,
+  "selected_mean_cv_accuracy": 0.849123825571839,
+  "selected_mean_cv_accuracy_rounded": 0.84912
+}
