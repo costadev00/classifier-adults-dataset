@@ -1,2 +1,7 @@
 kaggle
 kagglehub
+jupyterlab
+matplotlib
+numpy
+pandas
+seaborn
