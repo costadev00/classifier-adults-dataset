@@ -1,0 +1,57 @@
+{
+  "prepared_dir": "data/prepared/adult_income",
+  "artifacts": {
+    "feature_engineered_train": "feature_engineered_train.pkl",
+    "feature_engineered_test": "feature_engineered_test.pkl",
+    "tree_ready_train_X": "tree_ready_train_X.pkl",
+    "tree_ready_test_X": "tree_ready_test_X.pkl",
+    "linear_source_train": "linear_source_train.pkl",
+    "linear_source_test": "linear_source_test.pkl",
+    "linear_ready_train_X": "linear_ready_train_X.pkl",
+    "linear_ready_test_X": "linear_ready_test_X.pkl",
+    "train_prepared_csv": "train_prepared.csv",
+    "test_prepared_csv": "test_prepared.csv",
+    "sample_submission": "sample_submission.csv",
+    "train_target": "train_target.csv",
+    "test_reference": "test_reference.csv",
+    "removed_exact_duplicates": "removed_exact_duplicates.csv",
+    "conflicting_duplicate_rows": "conflicting_duplicate_rows.csv"
+  },
+  "recommended_usage": {
+    "xgboost": [
+      "tree_ready_train_X.pkl",
+      "tree_ready_test_X.pkl",
+      "train_target.csv",
+      "test_reference.csv"
+    ],
+    "knn": [
+      "linear_source_train.pkl",
+      "linear_source_test.pkl",
+      "train_target.csv",
+      "test_reference.csv"
+    ],
+    "neural_network": [
+      "linear_source_train.pkl",
+      "linear_source_test.pkl",
+      "train_target.csv",
+      "test_reference.csv"
+    ],
+    "precomputed_linear_baseline": [
+      "linear_ready_train_X.pkl",
+      "linear_ready_test_X.pkl",
+      "train_target.csv",
+      "test_reference.csv"
+    ],
+    "competition_style_pipeline": [
+      "train_prepared.csv",
+      "test_prepared.csv",
+      "sample_submission.csv"
+    ]
+  },
+  "notes": [
+    "linear_source_* should be preferred for fold-safe scaling and encoding inside future cross-validation pipelines.",
+    "tree_ready_* preserves categorical dtypes through pickle export for tree-based models.",
+    "train_prepared.csv and test_prepared.csv provide a familiar single-train single-test interface with aligned feature columns.",
+    "Exact duplicate training rows with identical predictors and target were removed before export; conflicting duplicate feature groups were preserved and flagged."
+  ]
+}
