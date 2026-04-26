@@ -1,0 +1,40 @@
+{
+  "selected_params": {
+    "model__C": 0.03
+  },
+  "best_mean_cv_accuracy": 0.8445902625471312,
+  "holdout_metrics": {
+    "accuracy": 0.8488014751075599,
+    "error_rate": 0.15119852489244012,
+    "balanced_accuracy": 0.7587062608444188,
+    "precision_positive": 0.7336,
+    "recall_positive": 0.5848214285714286,
+    "sensitivity": 0.5848214285714286,
+    "specificity": 0.932591093117409,
+    "f1_positive": 0.6508161816891412,
+    "roc_auc": 0.8972304129141534
+  },
+  "holdout_confusion_matrix": {
+    "pred_<=50K": {
+      "actual_<=50K": 4607,
+      "actual_>50K": 651
+    },
+    "pred_>50K": {
+      "actual_<=50K": 333,
+      "actual_>50K": 917
+    }
+  },
+  "holdout_confusion_terms": {
+    "true_negatives": 4607,
+    "false_positives": 333,
+    "false_negatives": 651,
+    "true_positives": 917
+  },
+  "evaluation_protocol": {
+    "development_split": "80% of labeled train_prepared.csv, stratified, used for CV/model selection",
+    "holdout_split": "20% of labeled train_prepared.csv, stratified, used only for final local evaluation",
+    "competition_test": "test_prepared.csv, no local labels, used only for final submission predictions",
+    "cv": "5-fold StratifiedKFold with shuffle=True and random_state=42",
+    "selection_metric": "accuracy"
+  }
+}
