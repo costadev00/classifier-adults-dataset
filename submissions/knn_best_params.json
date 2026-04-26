@@ -11,5 +11,55 @@
   },
   "tie_break_changed_selection": false,
   "selected_mean_cv_accuracy": 0.849123825571839,
-  "selected_mean_cv_accuracy_rounded": 0.84912
+  "selected_mean_cv_accuracy_rounded": 0.84912,
+  "selected_std_cv_accuracy": 0.005135123135583312,
+  "selected_fold_accuracies": [
+    0.8488282750672301,
+    0.8449865539761813,
+    0.8586246638494045,
+    0.8441882804995197,
+    0.8489913544668588
+  ],
+  "selected_fold_accuracy_by_fold": [
+    {
+      "fold": 1,
+      "knn_k": 61,
+      "weights": "uniform",
+      "p": 1,
+      "distance_metric": "manhattan",
+      "accuracy": 0.8488282750672301
+    },
+    {
+      "fold": 2,
+      "knn_k": 61,
+      "weights": "uniform",
+      "p": 1,
+      "distance_metric": "manhattan",
+      "accuracy": 0.8449865539761813
+    },
+    {
+      "fold": 3,
+      "knn_k": 61,
+      "weights": "uniform",
+      "p": 1,
+      "distance_metric": "manhattan",
+      "accuracy": 0.8586246638494045
+    },
+    {
+      "fold": 4,
+      "knn_k": 61,
+      "weights": "uniform",
+      "p": 1,
+      "distance_metric": "manhattan",
+      "accuracy": 0.8441882804995197
+    },
+    {
+      "fold": 5,
+      "knn_k": 61,
+      "weights": "uniform",
+      "p": 1,
+      "distance_metric": "manhattan",
+      "accuracy": 0.8489913544668588
+    }
+  ]
 }
