@@ -11,6 +11,8 @@
     "balanced_accuracy": 0.7735378108733372,
     "precision_positive": 0.7080344332855093,
     "recall_positive": 0.6294642857142857,
+    "sensitivity": 0.6294642857142857,
+    "specificity": 0.9176113360323886,
     "f1_positive": 0.6664415935178933,
     "roc_auc": 0.902150293315707
   },
@@ -23,5 +25,18 @@
       "actual_<=50K": 407,
       "actual_>50K": 987
     }
+  },
+  "holdout_confusion_terms": {
+    "true_negatives": 4533,
+    "false_positives": 407,
+    "false_negatives": 581,
+    "true_positives": 987
+  },
+  "evaluation_protocol": {
+    "development_split": "80% of labeled train_prepared.csv, stratified, used for CV/model selection",
+    "holdout_split": "20% of labeled train_prepared.csv, stratified, used only for final local evaluation",
+    "competition_test": "test_prepared.csv, no local labels, used only for final submission predictions",
+    "cv": "5-fold StratifiedKFold with shuffle=True and random_state=42",
+    "selection_metric": "accuracy"
   }
 }

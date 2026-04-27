@@ -1,0 +1,58 @@
+{
+  "grid_search_best_params": {
+    "model__C": 0.3
+  },
+  "tie_break_selected_params": {
+    "model__C": 0.3
+  },
+  "tie_break_changed_selection": false,
+  "tie_break_rule": "If rounded mean CV accuracies tie, choose the smaller C for stronger regularization.",
+  "selected_mean_cv_accuracy": 0.843860269112378,
+  "selected_mean_cv_accuracy_rounded": 0.84386,
+  "selected_std_cv_accuracy": 0.005204708854500693,
+  "selected_fold_accuracies": [
+    0.8455628121398386,
+    0.837879369957741,
+    0.8530541682673838,
+    0.8416906820365033,
+    0.8411143131604226
+  ],
+  "selected_fold_accuracy_by_fold": [
+    {
+      "fold": 1,
+      "logreg_C": 0.3,
+      "accuracy": 0.8455628121398386
+    },
+    {
+      "fold": 2,
+      "logreg_C": 0.3,
+      "accuracy": 0.837879369957741
+    },
+    {
+      "fold": 3,
+      "logreg_C": 0.3,
+      "accuracy": 0.8530541682673838
+    },
+    {
+      "fold": 4,
+      "logreg_C": 0.3,
+      "accuracy": 0.8416906820365033
+    },
+    {
+      "fold": 5,
+      "logreg_C": 0.3,
+      "accuracy": 0.8411143131604226
+    }
+  ],
+  "tested_C_values": [
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0
+  ]
+}

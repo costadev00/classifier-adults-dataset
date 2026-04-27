@@ -10,6 +10,7 @@
     "model__p": 1
   },
   "tie_break_changed_selection": false,
+  "tie_break_rule": "If rounded mean CV accuracies tie, choose the larger k for smoother neighborhoods, then Manhattan distance (p=1), then uniform weights.",
   "selected_mean_cv_accuracy": 0.849123825571839,
   "selected_mean_cv_accuracy_rounded": 0.84912,
   "selected_std_cv_accuracy": 0.005135123135583312,
@@ -61,5 +62,25 @@
       "distance_metric": "manhattan",
       "accuracy": 0.8489913544668588
     }
+  ],
+  "tested_k_values": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    15,
+    21,
+    31,
+    41,
+    61
+  ],
+  "tested_weights": [
+    "uniform",
+    "distance"
+  ],
+  "tested_p_values": [
+    1,
+    2
   ]
 }
